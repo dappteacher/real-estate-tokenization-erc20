@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Real Estate Tokenization Smart Contract
 
 Production-ready ERC20 smart contract for tokenizing real estate assets into transferable blockchain shares.
@@ -65,6 +64,7 @@ Tokenization of real estate assets into blockchain-based transferable ownership 
 ## Author
 Jacob Adelzadeh  
 Smart Contract Developer | Solidity Engineer
+
 =======
 # Real Estate Tokenization Smart Contract
 
@@ -100,4 +100,3 @@ Tokenizing real estate assets into blockchain-based transferable tokens.
 ## Author
 
 Smart Contract Developer — Solidity Engineer
->>>>>>> b59a31c4ce5d803020092a5932a3f0ccb86a501b
