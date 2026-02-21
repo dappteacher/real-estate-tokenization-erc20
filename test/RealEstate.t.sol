@@ -35,4 +35,10 @@ contract RealEstateTest is Test {
         vm.expectRevert();
         token.mint(user, 1000);
     }
+    
+    function testFuzzMint(uint256 amount) public {
+        token.mint(user, amount);
+        assertEq(token.balanceOf(user), amount);
+    }
+
 }

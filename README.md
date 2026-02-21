@@ -1,66 +1,66 @@
-## Foundry
+# Real Estate Tokenization Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Production-ready ERC20 smart contract for tokenizing real estate assets into transferable blockchain shares.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Overview
+RealEstate is an ERC20-based token representing fractional ownership of real estate assets.  
+The contract provides secure minting and burning controlled exclusively by the owner.
 
-## Documentation
+---
 
-https://book.getfoundry.sh/
+## Features
+- ERC20 compliant
+- Custom decimals support
+- Owner-restricted mint & burn
+- Clean architecture
+- Gas-efficient design
+- Fully testable with Foundry
 
-## Usage
+---
 
-### Build
+## Tech Stack
+- Solidity ^0.8.20
+- Foundry
+- OpenZeppelin
 
-```shell
-$ forge build
-```
+---
 
-### Test
+## Contract Architecture
+RealEstate
+ ├─ ERC20
+ └─ Ownable
 
-```shell
-$ forge test
-```
+---
 
-### Format
+## Testing
+Run tests:
+forge test
 
-```shell
-$ forge fmt
-```
+---
 
-### Gas Snapshots
+## Deployment
+Deploy locally:
+anvil
 
-```shell
-$ forge snapshot
-```
+Deploy to network:
+forge script script/DeployRealEstate.s.sol --broadcast
 
-### Anvil
+---
 
-```shell
-$ anvil
-```
+## Security Design
+- Uses audited OpenZeppelin libraries
+- Access control via Ownable
+- Solidity 0.8 overflow protection
 
-### Deploy
+---
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## Use Case
+Tokenization of real estate assets into blockchain-based transferable ownership shares.
 
-### Cast
+---
 
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Author
+Jacob Adelzadeh  
+Smart Contract Developer | Solidity Engineer
